@@ -1,0 +1,35 @@
+<ion-view view-title="Home">
+    <ion-content>
+        <div class="bar bar-subheader bar-stable static text-center">
+            <strong class="title">{{user}}</strong>
+        </div>
+        <div class="im-wrapper">
+            <div class="list">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Reference</span>
+                    <input type="text" placeholder="Reference" ng-model="ref" />
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Surname</span>
+                    <input type="text" placeholder="Surname" ng-model="surname" />
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Email</span>
+                    <input type="text" placeholder="Email" />
+                </label>
+            </div>
+            <button class="button button-dark" ng-click="submit_db()">
+                Submit Data
+            </button>
+            <button class="button button-royal" ng-click="update_db()">
+                Update Data
+            </button>
+            </br>
+            <div>
+                <button class="button button-block button-calm" ng-click="google_login()">
+                    Google Login
+                </button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
