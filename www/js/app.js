@@ -45,6 +45,16 @@ app.config(function($stateProvider, $urlRouterProvider) {
         }
     })
 
+    .state('app.greens', {
+        url: '/greens',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/greens.html',
+                controller: 'GreensCtrl'
+            }
+        }
+    })
+
     .state('app.lists', {
         url: '/lists',
         views: {
@@ -96,5 +106,5 @@ app.config(function($stateProvider, $urlRouterProvider) {
     });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/components');
+    $urlRouterProvider.otherwise('/app/home');
 });

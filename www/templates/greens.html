@@ -1,0 +1,53 @@
+<ion-view view-title="Greens High School">
+    <ion-content>
+        <div class="bar bar-subheader bar-stable static text-center">
+            <strong class="title">{{student.rollno}} - {{student.firstname}} {{student.lastname}}</strong>
+        </div>
+        <div class="im-wrapper">
+            <div class="list">
+                <!-- <label class="item item-input item-floating-label">
+                    <span class="input-label">Reference</span>
+                    <input type="text" placeholder="Reference" ng-model="ref" />
+                </label> -->
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Sets Ordered</span>
+                    <input type="number" placeholder="Sets Ordered" ng-model="student.sets" />
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Shirt Size</span>
+                    <input type="number" placeholder="Shirt Size" ng-model="student.shirtsize" />
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Half Pant Size</span>
+                    <input type="number" placeholder="Half Pant Size" ng-model="student.halfpantsize" />
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Skirt Size</span>
+                    <input type="number" placeholder="Skirt Size" ng-model="student.skirtsize" />
+                </label>
+                </br>
+                <!-- <button class="button button-dark" ng-click="submit_db()">
+                    Submit Data
+                </button> -->
+                <button class="button button-block button-royal" ng-click="update_db()">
+                    Update Data
+                </button>
+                </br>
+                <hr></hr>
+                <div style="text-align:right">
+                    <h4>Total Payable: Rs.{{student.totalpayable}}</h4>
+                    <h4><font color="green">- Total Paid: Rs.{{student.totalpaid}}</font></h4>
+                    <h4><font color="red">= Total Balance: Rs.{{student.balance}}</font></h4>
+                </div>
+                <div class="list">
+                    <div class="item item-input-inset">
+                        <input type="number" placeholder="Add Amount" ng-model="app.addamt" />
+                        <button class="button button-small button-energized" ng-click="add_amt()">
+                            <i class="icon ion-android-add"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
